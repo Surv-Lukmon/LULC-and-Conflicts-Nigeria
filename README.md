@@ -1,5 +1,3 @@
-The Python notebook will be uploaded soon. Please check back later.
-
 # Paper Title
 Revealing Land Use Dynamics in Armed-Conflict Hotspots in North-East Nigeria Using Earth Observation Data
 
@@ -33,11 +31,40 @@ Once installation completes successfully, activate it:
 conda activate land-conflict
 ```
 
+## 3. Activate the environment
+This project requires (login) credentials for **ACLED** and **Google Earth Engine (GEE)**, and a project name for **DTM**.
+
+Create a `.env` file in the project root folder (same location as the notebook) and add the following:
+
+```
+GEE_PROJECT_NAME="your-gee-project-name"
+ACLED_EMAIL="your_acled_email@example.com"
+ACLED_PASSWORD="your_acled_password"
+DTM_API_KEY=your-dtm-api-key
+```
+
+- **GEE_PROJECT_NAME**: Your Google Earth Engine project name. Register at https://earthengine.google.com.
+- **ACLED_EMAIL** and **ACLED_PASSWORD**: Register at https://acleddata.com.
+- **DTM_API_KEY**: Register at https://dtm-apim-portal.iom.int to get your subscription key.
+
+Never share your `.env` file or commit it to version control. 
+
 
 # How to Cite
 If you used the code and/or data, kindly cite this paper:
 
-APA STYLE: Lateef, L. O., Tella A.,  Miano J. R., & Aina Y. A. (2025). Revealing Land Use Dynamics in Armed-Conflict Hotspots in North-East Nigeria Using Earth Observation Data. Land Use Policy, 157, 107673. https://doi.org/10.1016/j.landusepol.2025.107673
+```bibtex
+@article{lateef2025revealing,
+  title={Revealing Land Use Dynamics in Armed-Conflict Hotspots in North-East Nigeria Using Earth Observation Data},
+  author={Lateef, Lateef O. and Tella, A. and Miano, J. R. and Aina, Y. A.},
+  journal={Land Use Policy},
+  volume={157},
+  pages={107673},
+  year={2025},
+  doi={10.1016/j.landusepol.2025.107673},
+  publisher={Elsevier}
+}
+```
 
 
 # Credits
